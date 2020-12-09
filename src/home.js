@@ -4,6 +4,7 @@ const home = (() => {
   function _createHomeContainer() {
     const homeContainer = document.createElement("div");
     homeContainer.classList.add("home-container");
+    homeContainer.classList.add("container");
 
     const img = _createImg();
     const textBox = _createTextBox();

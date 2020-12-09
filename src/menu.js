@@ -9,6 +9,7 @@ const menu = (() => {
   const li3 =        document.createElement("li");
 
   menuBox.classList.add("menu-box");
+  menuBox.classList.add("container");
 
   menu.textContent = "Menu:";
   li1.textContent = "Steak, well done";

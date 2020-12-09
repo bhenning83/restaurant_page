@@ -40,12 +40,8 @@ const DOM = (() => {
 
   function render() {
     const header = _createHeader();
-    const pageWrap = document.createElement("div");
-    
-    pageWrap.setAttribute("id", "page-wrap");
 
     content.appendChild(header);
-    content.appendChild(pageWrap);
   }
 
   return { render }
