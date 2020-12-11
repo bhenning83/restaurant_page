@@ -1,5 +1,3 @@
-import "./styles/style.css";
-
 const contact = (() => {
   const content = document.getElementById("content");
   const container =  document.createElement("div");
