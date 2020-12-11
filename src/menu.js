@@ -1,3 +1,5 @@
+import "./styles/style.css";
+
 const menu = (() => {
   const content = document.getElementById("content");
 

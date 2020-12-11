@@ -1,3 +1,5 @@
+import "./styles/style.css";
+
 const header = (() => {
   const content = document.getElementById("content");
 

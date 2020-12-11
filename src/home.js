@@ -1,3 +1,5 @@
+import "./styles/style.css";
+
 const home = (() => {
   const content = document.getElementById("content");
   const container =  document.createElement("div");
