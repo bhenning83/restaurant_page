@@ -2,25 +2,58 @@ header {
   background: rgb(2, 52, 2);
   color: white;
   display: flex;
-  align-items: baseline;
-  justify-content: center;
-}
-header h1 {
-  padding-right: 25px;
-}
-header h4 {
-  text-emphasis: italic;
-}
-.home-container {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
 }
+header h4 {
+  font-style: italic;
+  margin-top: 0;
+}
+header nav {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+header button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px 5px 25px 5px;
+}
+header button:focus {
+  outline: 0;
+}
+header button.active {
+  background-color: rgb(3, 82, 3);;
+}
+
 .text-box {
   width: 350px;
   border: 1px solid black;
   border-radius: 15px;
   padding: 20px;
   margin-top: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.menu-box {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 30px 20px 50px 20px;
+  width: 150px;
+  list-style-type: none;
+}
+.menu-box li {
+  margin: 15px 0;
+}
+.menu-box h3:last-of-type {
+  margin-top: 30px;
+}
+.contact-box {
+  width: 300px;
 }

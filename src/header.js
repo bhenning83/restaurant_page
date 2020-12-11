@@ -1,4 +1,4 @@
-const DOM = (() => {
+const header = (() => {
   const content = document.getElementById("content");
 
   function _createHeader() {
@@ -19,9 +19,9 @@ const DOM = (() => {
 
   function _createNavBar() {
     const navBar = document.createElement("nav");
-    const home = document.createElement("div");
-    const menu = document.createElement("div");
-    const contact = document.createElement("div");
+    const home = document.createElement("button");
+    const menu = document.createElement("button");
+    const contact = document.createElement("button");
 
     home.textContent = "Home";
     menu.textContent = "Menu";
@@ -47,4 +47,4 @@ const DOM = (() => {
   return { render }
 })();
 
-export default DOM
+export default header

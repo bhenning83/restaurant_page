@@ -1,4 +1,4 @@
-import DOM from './page_load';
+import header from './header';
 import home from './home'
 import menu from './menu';
 import contact from './contact'
@@ -15,27 +15,32 @@ menuBtn.addEventListener("click", showMenu);
 contactBtn.addEventListener("click", showContact);
 
 function initLoad() {
-  DOM.render();
+  header.render();
   home.render();
 }
 function showHome() {
   clear();
   home.render();
+  homeBtn.classList.add("active");
 }
 
 function showMenu() {
   clear();
   menu.render();
+  menuBtn.classList.add("active");
 }
 
 function showContact() {
   clear();
   contact.render();
+  contactBtn.classList.add("active");
 }
 
 function clear() {
   const container =  document.getElementsByClassName("container")[0];
-
   container.remove();
+  homeBtn.classList.remove("active");
+  menuBtn.classList.remove("active");
+  contactBtn.classList.remove("active");
 }
 

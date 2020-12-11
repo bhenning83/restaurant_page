@@ -1,5 +1,7 @@
 const home = (() => {
   const content = document.getElementById("content");
+  const container =  document.createElement("div");
+
 
   function _createHomeContainer() {
     const homeContainer = document.createElement("div");
@@ -22,7 +24,7 @@ const home = (() => {
 
     img.src = "https://www.indiewire.com/wp-content/uploads/2018/10/Its-Always-Sunny-in-Philadelphia-Seinfeld.png?w=670&h=377&crop=1";
     img.alt ="Carmine's friendly staff"
-    caption.textContent = "Our friendly wait staff will be happy to serve you.";
+    caption.textContent = "Our friendly wait staff will be happy to serve you";
 
     figure.appendChild(img);
     figure.appendChild(caption);
@@ -49,7 +51,8 @@ const home = (() => {
 
   function render() {
     const homeContainer = _createHomeContainer();
-    content.appendChild(homeContainer);
+    container.appendChild(homeContainer);
+    content.appendChild(container);
   }
 
   return { render }
